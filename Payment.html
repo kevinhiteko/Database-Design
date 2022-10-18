@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+    .myLink {display: none}
+    </style>
+      
+}
+</style>
+      
+      <!-- Hovering menu -->
+    <style>
+        #mySidenav a {
+          position: absolute;
+          left: -80px;
+          transition: 0.3s;
+          padding: 15px;
+          width: 100px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          border-radius: 0 5px 5px 0;
+        }
+
+        #mySidenav a:hover {
+          left: 0;
+        }
+
+        #home {
+          top: 20px;
+          background-color: #04AA6D;
+        }
+
+        #book {
+          top: 80px;
+          background-color: #2196F3;
+        }
+
+        #buses {
+          top: 140px;
+          background-color: #f44336;
+        }
+
+        #contact {
+          top: 200px;
+          background-color: #555
+        }
+        </style>
+      <style>
+          .pop_up{
+              width: 70%;
+              border: 1px solid black;
+              border-radius: 10px;
+              margin:auto;
+              background-color: white;
+              text-decoration-color: aqua;
+              opacity: 0.9;
+          }
+          .pop_up2{
+              width: 90%;
+              border: 1px; solid black;
+              border-radius: 5px;
+              margin: auto;
+              background-color: blue;
+              text-emphasis-color: white;
+          }
+      </style>
+  </head>
+<body class="w3-light-white">
+    
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+<image src="https://scontent-jnb1-1.xx.fbcdn.net/v/t39.30808-6/311433498_114927608064018_8908924827651790765_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cqbs6RDSo68AX8kh9Vj&_nc_ht=scontent-jnb1-1.xx&oh=00_AT8zwtZ3kX2ezoDgwCjn5VpPy7YmLvqSfW_YAZCPgGTQGw&oe=6352E49B">
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/03/the-top-10-most-popular-online-payment-solutions-5e9978d564973-1520x800.png" alt="Payment image" width="1500" height="700">
+    
+      <!--Hoverable   -->
+      <div id="mySidenav" class="sidenav">
+          <a href="Home_page.html" id="home">Home</a>
+          <a href="#" id="book">Book</a>
+          <a href="Bus_page.html" id="buses">Buses</a>
+          <a href="Contact_page.html" id="contact">Contact</a>
+      </div>
+    <div class="w3-display-middle" style="width:65%">
+        <div class="pop_up">
+ <form action="Payment.php" method="POST">
+     <div class="pop_up2">
+         <p style="color: azure; font-size: 30px">Please fill in to complete the Booking</p>
+     </div>
+  <table>
+   <tr>
+    <td>Name of Bank :</td>
+    <td>
+     <input type="radio" name="Bank_Name" value="A" required>Absa
+     <input type="radio" name="Bank_Name" value="C" required>Capitec
+     <input type="radio" name="Bank_Name" value="F" required>FNB
+     <input type="radio" name="Bank_Name" value="S" required>Standard Bank
+    </td>
+   </tr>
+   <tr>
+    <td>Account Number :</td>
+    <td><input type="text" name="Account_Number" required></td>
+   </tr>
+   <tr>
+    <td>Card Number :</td>
+    <td><input type="text" name="Card_Number" required></td>
+   </tr> 
+   <tr>
+    <td >Security :</td>
+    <td><input type="text" name="Security_Code" required></td>
+    </tr>
+   <tr>
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+  </table>
+     <br> <br>
+ </form>
+        </div>
+    </div>
+    </header>
+    
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px;">
+    </div>
+        
+        
+<footer class="w3-container w3-center w3-hover-blue w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <a class="fa fa-facebook-official w3-hover-opacity"  href="https://www.facebook.com/profile.php?id=100086403381848&__tn__=%3C%2Cd"></a>
+      &nbsp;
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/"></a>
+      &nbsp;
+    <a class="fa fa-snapchat w3-hover-opacity" href="https://www.snapchat.com/"></a>
+      &nbsp;
+    <a class="fa fa-pinterest-p w3-hover-opacity" href="https://za.pinterest.com/"></a>
+      &nbsp;
+    <a class="fa fa-twitter w3-hover-opacity"href="https://www.twitter.com/"></a>
+      &nbsp;
+    <a class="fa fa-linkedin w3-hover-opacity" href="https://za.linkedin.com/"></a>
+      &nbsp;
+  </div>
+    <p> </p>
+ <!-- <a class="w3-button w3-round-xxlarge w3-red w3-margin-bottom" href="ClientInfo_page.html" target="_blank">BOOK NOW</a> -->
+ <!-- Footer end. -->
+        </footer>
+        
+    </body>
+</html>
