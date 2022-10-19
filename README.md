@@ -2,7 +2,7 @@
 Database design Bus System Demo using HTML, PHP and SQL in myphpadmin.
 
 @ STEP 1
-download XAMPP and Install
+download XAMPP and Install https://sourceforge.net/projects/xampp/postdownload
 open application
 start APACHE
 start SQL
